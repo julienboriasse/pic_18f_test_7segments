@@ -16,7 +16,7 @@
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC18F25K80
         Driver Version    :  2.00
-*/
+ */
 
 /*
     (c) 2018 Microchip Technology Inc. and its subsidiaries. 
@@ -39,15 +39,234 @@
     CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT 
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS 
     SOFTWARE.
-*/
+ */
 
 #include "mcc_generated_files/mcc.h"
+
+void set_7_segments(uint8_t state) {
+    switch (state) {
+        case 0: // OFF
+            IO_RA5_SetLow(); // LED
+            IO_RB1_SetHigh(); // F
+            IO_RB2_SetHigh(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetHigh(); // D
+            IO_RC5_SetHigh(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetHigh(); // G
+            break;
+
+        case 1: // ON
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetLow(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '0': // 0
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetHigh(); // G
+            break;
+
+        case '1': // 1
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetHigh(); // F
+            IO_RB2_SetHigh(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetHigh(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetHigh(); // G
+            break;
+
+        case '2': // 2
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetHigh(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetHigh(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '3': // 3
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetHigh(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '4': // 4
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetHigh(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetHigh(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '5': // 5
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '6': // 6
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '7': // 7
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetHigh(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetHigh(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetHigh(); // G
+            break;
+
+        case '8': // 8
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case '9': // 9
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetHigh(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case 'A': // A
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetHigh(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case 'B': // B
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetHigh(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case 'C': // C
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetHigh(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetHigh(); // G
+            break;
+
+        case 'D': // D
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetHigh(); // F
+            IO_RB2_SetHigh(); // A
+            IO_RB3_SetLow(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetLow(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case 'E': // E
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetLow(); // D
+            IO_RC5_SetHigh(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+
+        case 'F': // F
+            IO_RA5_SetHigh(); // LED
+            IO_RB1_SetLow(); // F
+            IO_RB2_SetLow(); // A
+            IO_RB3_SetHigh(); // B
+            IO_RB4_SetLow(); // E
+            IO_RB5_SetHigh(); // D
+            IO_RC5_SetHigh(); // C
+            IO_RC6_SetHigh(); // DP
+            IO_RC7_SetLow(); // G
+            break;
+    }
+}
 
 /*
                          Main application
  */
-void main(void)
-{
+void main(void) {
     // Initialize the device
     SYSTEM_Initialize();
 
@@ -56,22 +275,49 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    // INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
 
     // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
+    // INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
-    while (1)
-    {
-        // Add your application code
+    // Mode off
+    set_7_segments(0);
+    __delay_ms(500);
+
+
+    // Mode A to F
+    for (uint8_t i = '0'; i <= '9'; i++) {
+        set_7_segments(i);
+        __delay_ms(500);
     }
+    for (uint8_t i = 'A'; i <= 'F'; i++) {
+        set_7_segments(i);
+        __delay_ms(500);
+    }
+
+    // Mode blink
+    set_7_segments(0);
+    __delay_ms(500);
+    set_7_segments(1);
+    __delay_ms(200);
+    set_7_segments(0);
+    __delay_ms(500);
+    set_7_segments(1);
+    __delay_ms(200);
+    set_7_segments(0);
+    __delay_ms(500);
+    set_7_segments(1);
+    __delay_ms(200);
+    set_7_segments(0);
+    __delay_ms(500);
+
 }
 /**
  End of File
-*/
+ */
