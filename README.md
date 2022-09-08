@@ -1,6 +1,6 @@
 # test_uart
 
-Ce programme vérifie que votre carte PIC 18F fonctionne avec un afficheur 7 segment branché de la manière suivante :
+Ce programme vérifie que votre carte PIC 18F fonctionne avec un afficheur 7 segments branché de la manière suivante :
 
 
 # Installation
