@@ -1,19 +1,19 @@
 # test_uart
 
-Ce programme vÃ©rifie que votre carte PIC 18F fonctionne avec un afficheur 7 segment branché de la manière suivante :
+Ce programme vérifie que votre carte PIC 18F fonctionne avec un afficheur 7 segment branché de la manière suivante :
 
 
 # Installation
 
-1. Cloner ou tÃ©lÃ©charger le rÃ©pertoire git localement
+1. Cloner ou télécharger le répertoire git localement
 2. Ouvrir le projet avec MPLAB X
 3. Cliquer sur "Make and Program Device"
 
-Note : Vous pouvez Ã©galement programmer directement l'executable prÃ©sent dans le rÃ©pertoire bin
+Note : Vous pouvez également programmer directement l'executable présent dans le répertoire bin
 
 # Utilisation
 
-Suivre les Ã©tapes suivantes :
+Suivre les étapes suivantes :
 
 - Programmer le PIC
 - Appuyer sur le bouton "Reset" de la carte PIC
