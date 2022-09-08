@@ -6,9 +6,9 @@
             <name>pic_18f_test_7segments</name>
             <creation-uuid>d758bab0-cfe8-48f6-a500-d42c65bf97e6</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions/>
+            <c-extensions>c</c-extensions>
             <cpp-extensions/>
-            <header-extensions/>
+            <header-extensions>h</header-extensions>
             <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
