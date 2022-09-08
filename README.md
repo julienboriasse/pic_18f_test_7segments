@@ -2,16 +2,15 @@
 
 Ce programme vérifie que votre carte PIC 18F fonctionne avec un afficheur 7 segments branché de la manière suivante :
 
-- E <-> B4
-- D <-> B5
-- ANODE <-> VCC
-- C <-> C5
-- DP <-> C6
-- B <-> B3
 - A <-> B2
-- ANODE <-> VCC
+- B <-> B3
+- C <-> C5
+- D <-> B5
+- E <-> B4
 - F <-> B1
 - G <-> C7
+- DP <-> C6
+- ANODE <-> VCC
 
 # Installation
 
