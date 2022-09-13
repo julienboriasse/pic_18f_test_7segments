@@ -8,8 +8,8 @@ Ce programme vérifie que votre carte PIC 18F fonctionne avec un afficheur 7 segm
 - D <-> B5
 - E <-> B4
 - F <-> B1
-- G <-> C7
-- DP <-> C6
+- G <-> C2
+- DP <-> C1
 - ANODE <-> VCC
 
 # Installation

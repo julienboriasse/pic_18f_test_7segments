@@ -53,8 +53,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetHigh(); // D
             IO_RC5_SetHigh(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetHigh(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetHigh(); // G
             break;
 
         case 1: // ON
@@ -65,8 +65,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetLow(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetLow(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '0': // 0
@@ -77,8 +77,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetHigh(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetHigh(); // G
             break;
 
         case '1': // 1
@@ -89,8 +89,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetHigh(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetHigh(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetHigh(); // G
             break;
 
         case '2': // 2
@@ -101,8 +101,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetHigh(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '3': // 3
@@ -113,8 +113,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '4': // 4
@@ -125,8 +125,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetHigh(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '5': // 5
@@ -137,8 +137,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '6': // 6
@@ -149,8 +149,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '7': // 7
@@ -161,8 +161,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetHigh(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetHigh(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetHigh(); // G
             break;
 
         case '8': // 8
@@ -173,8 +173,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case '9': // 9
@@ -185,8 +185,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetHigh(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case 'A': // A
@@ -197,8 +197,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetHigh(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case 'B': // B
@@ -209,8 +209,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case 'C': // C
@@ -221,8 +221,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetHigh(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetHigh(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetHigh(); // G
             break;
 
         case 'D': // D
@@ -233,8 +233,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetLow(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case 'E': // E
@@ -245,8 +245,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetLow(); // D
             IO_RC5_SetHigh(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
 
         case 'F': // F
@@ -257,8 +257,8 @@ void set_7_segments(uint8_t state) {
             IO_RB4_SetLow(); // E
             IO_RB5_SetHigh(); // D
             IO_RC5_SetHigh(); // C
-            IO_RC6_SetHigh(); // DP
-            IO_RC7_SetLow(); // G
+            IO_RC1_SetHigh(); // DP
+            IO_RC2_SetLow(); // G
             break;
     }
 }
